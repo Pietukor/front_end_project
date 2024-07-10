@@ -3,10 +3,18 @@
     .projects {
         grid-template-columns: repeat(4, 1fr);
     }
+    .lg-heading {
+       margin-left: 70px; 
+    }
+    .sm-heading {
+        margin-left: 70px;
+    }
+        
 }
 
 // Desktops
 @include mediaLg {
+    
     .projects {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -17,9 +25,9 @@
     main {
         align-items: center;
         text-align: center;
-
+        
         .lg-heading {
-            line-height: 1;
+            line-height: 1.5;
             margin-bottom: 1rem;
         }
     }

@@ -114,11 +114,19 @@ body {
       z-index: -1;
       background: rgba(55, 61, 60, 0.9); }
 
+br {
+  line-height: 150%; }
+
 h1,
 h2,
 h3 {
   margin: 0;
   font-weight: 400; }
+  h1.br,
+  h2.br,
+  h3.br {
+    display: block;
+    margin: 5px; }
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
@@ -127,8 +135,7 @@ h3 {
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0,2rem 1rem;
-    background: rgba(60, 66, 65, 0.5); }
+    padding: 0,2rem 1rem; }
 
 a {
   color: #fff;
@@ -238,7 +245,11 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  .lg-heading {
+    margin-left: 70px; }
+  .sm-heading {
+    margin-left: 70px; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
@@ -249,7 +260,7 @@ main {
     align-items: center;
     text-align: center; }
     main .lg-heading {
-      line-height: 1;
+      line-height: 1.5;
       margin-bottom: 1rem; }
   ul.menu-nav, div.menu-branding {
     float: none;
