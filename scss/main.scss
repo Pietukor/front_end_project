@@ -6,25 +6,31 @@
     box-sizing: border-box;
 }
 
-body {
+:root {
+    --headline-color: white;
+    --background-color: #11151c ;
+    --text-color: rgba(255, 255, 255, 0.4);
+}
+
+html, body {
     @include background;
     background: $primary-color;
     color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Open sans', sans-serif;
+    line-height: 1.4;
 }
 
 //Headings
-br {
-    line-height: 150%;
- }
+
 h1,
-h2,
+h2, 
 h3 {
     margin: 0;
-    font-weight: 400;
+    font-weight: 540;
     &.br {
             display: block;
             margin: 5px;
@@ -38,6 +44,7 @@ h3 {
     &.sm-heading {
         margin-bottom: 2rem;
         padding: 0,2rem 1rem;
+        margin-top: 16rem;
         //background: rgba(lighten($primary-color, 2), 0.5);
     }
 }
@@ -61,7 +68,7 @@ main {
     padding: 4rem;
     //height: 100%;
     min-height: calc(100vh - 60px);
-
+    
     .icons {
         margin-top: 1rem;
 

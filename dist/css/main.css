@@ -93,18 +93,25 @@
 * {
   box-sizing: border-box; }
 
-body {
+:root {
+  --headline-color: white;
+  --background-color: #11151c ;
+  --text-color: rgba(255, 255, 255, 0.4); }
+
+html, body {
   background: #373d3c;
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
-  body#bg-img {
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Open sans', sans-serif;
+  line-height: 1.4; }
+  html#bg-img, body#bg-img {
     background: url(../img/tausta.jpg);
     background-attachment: fixed;
     background-size: cover; }
-    body#bg-img:after {
+    html#bg-img:after, body#bg-img:after {
       content: '';
       position: absolute;
       top: 0;
@@ -114,14 +121,11 @@ body {
       z-index: -1;
       background: rgba(55, 61, 60, 0.9); }
 
-br {
-  line-height: 150%; }
-
 h1,
 h2,
 h3 {
   margin: 0;
-  font-weight: 400; }
+  font-weight: 540; }
   h1.br,
   h2.br,
   h3.br {
@@ -135,7 +139,8 @@ h3 {
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0,2rem 1rem; }
+    padding: 0,2rem 1rem;
+    margin-top: 16rem; }
 
 a {
   color: #fff;

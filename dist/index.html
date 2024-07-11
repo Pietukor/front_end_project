@@ -10,6 +10,25 @@
     <title>Welcome to my Portfolio</title>
 </head>
 
+<svg>
+    <filter id = "grain">
+        <feTurbulence
+            type="turbulence"
+            baseFrequency="0.7"
+        />
+    </filter>
+</svg>
+
+<div class="heading-container">
+            <div id="text-behind">PHOSPHENE<br>DESIGN COLLECTIVE</div>
+            <div id="text-behind-blur">PHOSPHENE<br>DESIGN COLLECTIVE</div>
+            <div id="text-front">PHOSPHENE<br>DESIGN COLLECTIVE</div>
+</div>
+
+<div class="canvas-container">
+    <canvas id="'canvas"></canvas>
+</div>
+
 <body id="bg-img">
     <header>
         <div class="menu-btn">
@@ -45,9 +64,14 @@
                 </li>
             </ul>
         </nav>
-    </header>    
+    </header>  
+
     
+
+
+
     <main id="home">
+        
         <h1 class="lg-heading" style="line-height: 100%;">
             Architecture made <br> <span class="text-secondary">Better</span>
         </h1>
