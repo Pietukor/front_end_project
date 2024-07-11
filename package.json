@@ -9,6 +9,7 @@
   "author": "Pietu",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^9.0.0"
+    "node-sass": "^9.0.0",
+    "three": "^0.166.1"
   }
 }

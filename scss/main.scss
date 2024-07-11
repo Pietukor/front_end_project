@@ -90,6 +90,37 @@ main {
     }
 }
 
+.camvas-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.headline-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+#text-behind, #text-front, #text-behind-blur {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    text-align: center;
+    font-size: clamp(24px, 20vw, 200px);
+    font-weight: 800;
+    letter-spacing: 10px;
+    line-height: 0.8;
+}
+
+
 .about-info {
     display: grid;
     grid-gap: 30px;
