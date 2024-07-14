@@ -1,11 +1,12 @@
-$primary-color: rgb(55, 61, 60);
-$secondary-color: #eece1a;
+$primary-color: rgb(80, 87, 85);
+$feature-color: rgb(255, 255, 255);
+$secondary-color: #0244f8;
 $show-home-image: true;
 $home-image: url(../img/tausta.jpg);
 $background-opacity: 0.9;
 
 @mixin easeOut {
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 @mixin background {

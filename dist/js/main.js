@@ -1,5 +1,5 @@
 //Import THREE.js
-
+import * as THREE from 'three';
 
 
 
