@@ -1,5 +1,5 @@
 @import 'config';
-@import'menu';
+
 
 
 * {
@@ -47,6 +47,10 @@ nav li{
 
     &:first-child{
         margin-right: auto;
+    }
+
+    &:last-child{
+        display: none;
     }
 }
 
