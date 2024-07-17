@@ -1,5 +1,3 @@
-//Import THREE.js
-import * as THREE from 'three';
 
 const showbar = document.getElementById("showBar");
 const hidebar = document.getElementById("hideBar");
