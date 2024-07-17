@@ -104,7 +104,10 @@ h3 {
         }
 
     &.lg-heading {
-        font-size: 6rem;
+        text-align: center;
+        font-size: clamp(4rem, 10vw, + 0.5rem, 9rem);
+        font-weight: 700;
+        text-transform: uppercase;
         
     }
 
@@ -114,6 +117,10 @@ h3 {
         margin-top: 16rem;
         //background: rgba(lighten($primary-color, 2), 0.5);
     }
+}
+
+.index-header {
+    // background-image: ;
 }
 
 a {
