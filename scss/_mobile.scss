@@ -1,13 +1,15 @@
 // Widescreens
 @include mediaXl {
-    .projects {
-        grid-template-columns: repeat(4, 1fr);
-    }
+    
 //    .lg-heading {
  //      margin-left: 70px; 
  //   }
     .sm-heading {
         margin-left: 70px;
+    }
+
+    .places {
+        grid-template-columns: repeat(4, 1fr);
     }
         
 }
@@ -15,8 +17,12 @@
 // Desktops
 @include mediaLg {
     
-    .projects {
+    .places {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .item-card{
+        width: 30vw
     }
 }
 
@@ -24,12 +30,14 @@
 @include mediaMd {
     main {
         align-items: center;
-        text-align: center;
-        
-//        .lg-heading {
- //           line-height: 1.5;
- //           margin-bottom: 1rem;
- //       }
+    }
+
+    .places {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item-card {
+        width: 45vw;
     }
 
     nav li{
@@ -59,9 +67,6 @@
         grid-template-columns: 1fr;
     }
 
-    .projects {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 // Smartphones
@@ -70,11 +75,15 @@
         margin-top: 10vh;
     }
 
-    .projects {
-        grid-template-columns: repeat(1fr);
+    .places {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .sidebar {
         width: 100%;
+    }
+
+    .item-card{
+        width: 80vw;
     }
 }

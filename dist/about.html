@@ -11,41 +11,33 @@
 </head>
 
 <body>
-    <header>
-        <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-        </div>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Logo</a></li>
+            <li class="topbar_element"><a href="about.html">About</a></li>
+            <li class="topbar_element"><a href="places.html">Work</a></li>
+            <li class="topbar_element"><a href="map.html">Map</a></li>
+            <li class="menu_toggle" onclick=showSidebar()><a href="#"><i class="fa-solid fa-wind"></i></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-right-long"></i></a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="places.html">Work</a></li>
+            <li><a href="map.html">Map</a></li>
+        </ul>
 
-        <nav class="menu">
-            <div class="menu-branding">
-                <div class="portrait"></div>
-            </div>
-            <ul class="menu-nav">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">
-                        Home
-                    </a>
-                </li>
-                <li class="nav-item current">
-                    <a href="about.html" class="nav-link">
-                        About
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="work.html" class="nav-link">
-                        Work
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">
-                        Contact
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>    
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector(".sidebar");
+                sidebar.style.display = "flex";
+            }
+            function hideSidebar() {
+                 const sidebar = document.querySelector(".sidebar");
+                 sidebar.style.display = "none";
+            } 
+        </script>
+
+    </nav>
     
     <main id="about">
         <h1 class="lg-heading">
