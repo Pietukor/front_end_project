@@ -15,16 +15,10 @@
 }
 
 html, body {
-    min-height: 100vh;
-    @include background;
     background: $primary-color;
-    color: set-text-color($primary-color);
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
     font-family: 'Open sans', sans-serif;
-    line-height: 1.4;
+    
+    
 }
 
 //navigation bar
@@ -44,6 +38,7 @@ nav ul{
 
 nav li{
     height: 50px;
+
 
     &:first-child{
         margin-right: auto;
@@ -136,62 +131,25 @@ header {
     color: $secondary-color;
 }
 
-main {
-    padding: 4rem;
-    min-height: calc(100vh - 60px);
-    
-    .icons {
-        margin-top: 1rem;
 
-        a {
-            padding: 0,1rem;
+// Landing page and parallax effects
 
-            &:hover {
-                color: $secondary-color;
-                @include easeOut();
-            }
-        }
-    }
-
-    &#home {
-        overflow: hidden;
-        h1 {
-            margin-top: 20vh;
-        }
-    }
+.parallax-wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
 }
 
-.canvas-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-}
-
-.headline-container {
-    display: flex;
-    align-items: center;
+.landing-screen{
     justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-}
+    height: 100vh;
 
-#text-behind, #text-front, #text-behind-blur {
-    font-family: 'Roboto', sans-serif;
-    position: absolute;
-    text-align: center;
-    font-size: clamp(24px, 20vw, 200px);
-    font-weight: 800;
-    letter-spacing: 10px;
-    line-height: 0.8;
+
 }
 
 
+// about page
 .about-info {
     display: grid;
     grid-gap: 30px;
@@ -232,14 +190,22 @@ main {
 }
 
 // Places
-.places {
+
+.highlights {
     justify-content: center;
+    align-items: center;
+    
+}
+.places {
     display: grid;
     grid-gap: 1.2rem;
     grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
 }
 
 .item-card {
+    justify-content: center;
     width: 23vw;
     max-width: 340px;
     height: 500px;

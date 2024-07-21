@@ -9,28 +9,8 @@
   --text-color: rgba(255, 255, 255, 0.4); }
 
 html, body {
-  min-height: 100vh;
   background: #dee6e3;
-  color: #000;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  font-family: 'Open sans', sans-serif;
-  line-height: 1.4; }
-  html#bg-img, body#bg-img {
-    background: url(../img/tausta.jpg);
-    background-attachment: fixed;
-    background-size: cover; }
-    html#bg-img:after, body#bg-img:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: rgba(222, 230, 227, 0.9); }
+  font-family: 'Open sans', sans-serif; }
 
 nav {
   background-color: white;
@@ -119,47 +99,15 @@ header {
 .text-secondary {
   color: #548164; }
 
-main {
-  padding: 4rem;
-  min-height: calc(100vh - 60px); }
-  main .icons {
-    margin-top: 1rem; }
-    main .icons a {
-      padding: 0,1rem; }
-      main .icons a:hover {
-        color: #548164;
-        transition: all 0.3s ease-out; }
-  main#home {
-    overflow: hidden; }
-    main#home h1 {
-      margin-top: 20vh; }
+.parallax-wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 300px; }
 
-.canvas-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2; }
-
-.headline-container {
-  display: flex;
-  align-items: center;
+.landing-screen {
   justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none; }
-
-#text-behind, #text-front, #text-behind-blur {
-  font-family: 'Roboto', sans-serif;
-  position: absolute;
-  text-align: center;
-  font-size: clamp(24px, 20vw, 200px);
-  font-weight: 800;
-  letter-spacing: 10px;
-  line-height: 0.8; }
+  height: 100vh; }
 
 .about-info {
   display: grid;
@@ -185,13 +133,19 @@ main {
     padding: 0,5rem;
     border-bottom: #548164 5px solid; }
 
-.places {
+.highlights {
   justify-content: center;
+  align-items: center; }
+
+.places {
   display: grid;
   grid-gap: 1.2rem;
-  grid-template-columns: repeat(4, 1fr); }
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center; }
 
 .item-card {
+  justify-content: center;
   width: 23vw;
   max-width: 340px;
   height: 500px;
