@@ -5,16 +5,16 @@
         margin-left: 70px;
     }
 
-    .places {
-        grid-template-columns: repeat(4, 1fr);
-    }
+    //.places-grid {
+    //    grid-template-columns: repeat(auto-fill, minmax(100,1fr));
+    //}
         
 }
 
 // Desktops
 @include mediaLg {
     
-    .places {
+    .places-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -29,7 +29,7 @@
         align-items: center;
     }
 
-    .places {
+    .places-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -72,7 +72,7 @@
         margin-top: 10vh;
     }
 
-    .places {
+    .places-grid {
         grid-template-columns: repeat(1, 1fr);
     }
 
