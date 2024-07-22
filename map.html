@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://kit.fontawesome.com/c1a95c416f.js" crossorigin="anonymous"></script>
+
+    <title>Route map</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Logo</a></li>
+            <li class="topbar_element"><a href="about.html">About</a></li>
+            <li class="topbar_element"><a href="places.html">Discover</a></li>
+            <li class="topbar_element"><a href="map.html">Map</a></li>
+            <li class="menu_toggle" onclick=showSidebar()><a href="#"><i class="fa-solid fa-wind"></i></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-right-long"></i></a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="places.html">Discover</a></li>
+            <li><a href="map.html">Map</a></li>
+        </ul>
+
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector(".sidebar");
+                sidebar.style.display = "flex";
+            }
+            function hideSidebar() {
+                 const sidebar = document.querySelector(".sidebar");
+                 sidebar.style.display = "none";
+            } 
+        </script>
+
+    </nav>
+      
+    <div class="location-container">
+        <h3 class="sm-heading">Explore the route</h3> 
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d190216.40755730448!2d24.02307978800104!3d68.13231013178296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfi!2sfi!4v1721389181717!5m2!1sfi!2sfi" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div> 
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

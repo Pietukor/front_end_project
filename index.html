@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://kit.fontawesome.com/c1a95c416f.js" crossorigin="anonymous"></script>
+    
+
+    <title>Project</title>
+</head>
+
+
+
+<body>
+    <script src="js/main.js" type="text/javascript" ></script>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Logo</a></li>
+            <li class="topbar_element"><a href="about.html">About</a></li>
+            <li class="topbar_element"><a href="places.html">Discover</a></li>
+            <li class="topbar_element"><a href="map.html">Map</a></li>
+            <li class="menu_toggle" onclick=showSidebar()><a href="#"><i class="fa-solid fa-wind"></i></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-right-long"></i></a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="places.html">Discover</a></li>
+            <li><a href="map.html">Map</a></li>
+        </ul>
+
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector(".sidebar");
+                sidebar.style.display = "flex";
+            }
+            function hideSidebar() {
+                 const sidebar = document.querySelector(".sidebar");
+                 sidebar.style.display = "none";
+            } 
+        </script>
+
+    </nav>
+    
+    
+    <div class="parallax-wrapper">
+
+        <header class="landing-header">
+            <img src="/dist/img/Parallax_backdrop/Pallas_Patikka_parallax_tausta_1.png" class="parallax-backdrop-img">
+            <img src="/dist/img/Parallax_backdrop/Pallas_Patikka_parallax_tausta_4_alt.png" class="parallax-foreground-img">
+            <h3 class="lg-heading" style="line-height: 100%;">Pallas hetta</h3>
+        </header>
+        <section class="landing-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dignissimos id dolor et ipsam facilis rerum soluta incidunt vero impedit, porro unde ipsa natus inventore iure possimus, accusamus ad quia. Soluta nostrum laudantium quisquam delectus incidunt cumque beatae aliquid maiores, doloribus est earum unde voluptas a aliquam recusandae minus laboriosam officia magnam ullam quidem, adipisci, repudiandae qui officiis. Dolore aliquid nulla ratione quasi quod vel eveniet odit iure ducimus, velit, nisi voluptas ea suscipit expedita? Eaque ex nostrum at corporis facilis deserunt distinctio pariatur possimus in. Ullam similique totam velit, in porro quia esse explicabo, maiores molestias saepe, odio est necessitatibus dolorum natus id magni pariatur quod cupiditate. Repellat eaque fuga illum autem quia mollitia rerum adipisci natus, ex aut labore, nostrum non omnis veniam facere ea laudantium repudiandae cupiditate alias consequatur recusandae dignissimos dicta. Beatae doloribus provident veritatis enim magni, reprehenderit officia incidunt praesentium cum ducimus autem voluptatibus soluta dolorum? Officia voluptatem nesciunt aut perferendis ratione commodi. Blanditiis cumque quasi quidem eaque minus non maxime quam, provident iure, rem ut dicta possimus, officia repudiandae necessitatibus explicabo vero illum dignissimos consequuntur exercitationem alias reprehenderit labore culpa. Nihil eius maxime quaerat quibusdam qui sit, necessitatibus beatae adipisci, explicabo, fugit iste nemo.
+        </section>
+
+<!--
+
+        <div class="parallax-group landing-screen">
+            <div class="parallax_layer background">
+                <header class="index-header">
+                    <h3 class="lg-heading" style="line-height: 100%;">
+                        Pallas hetta
+                    </h3>
+                </header>
+            </div>
+
+            <div class="parallax_layer layer-1">
+                <h3 class="sm-heading"> Discover more </h3>
+            </div>
+
+        </div>
+        <div class="parallax-group content-screen">
+
+        </div>
+
+    -->
+
+
+    </div>
+
+    
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

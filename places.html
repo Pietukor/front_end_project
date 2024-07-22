@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://kit.fontawesome.com/c1a95c416f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Logo</a></li>
+            <li class="topbar_element"><a href="about.html">About</a></li>
+            <li class="topbar_element"><a href="places.html">Discover</a></li>
+            <li class="topbar_element"><a href="map.html">Map</a></li>
+            <li class="menu_toggle" onclick=showSidebar()><a href="#"><i class="fa-solid fa-wind"></i></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-right-long"></i></a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="places.html">Discover</a></li>
+            <li><a href="map.html">Map</a></li>
+        </ul>
+
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector(".sidebar");
+                sidebar.style.display = "flex";
+            }
+            function hideSidebar() {
+                 const sidebar = document.querySelector(".sidebar");
+                 sidebar.style.display = "none";
+            } 
+        </script>
+
+    </nav>
+    
+    <div class="discover-content">
+        <h2 class="sm-heading">Discover places of interest</h2>
+    </div>
+
+    
+    <main class="places-grid">
+           
+        <div class="item-card">
+            <img src="img/places/Sioskuru_leiri.jpg" class="card-image">
+            <div class="card-content">
+                <p class="card-title">Sioskuru</p>        
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error explicabo cum corrupti tenetur iure alias labore id nostrum non dolor nulla maiores aperiam voluptatem voluptates, vero excepturi debitis sit quaerat?</p>
+                <button class="card-button">Read more</button>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="img/places/Lumikero_näkymä.jpg" class="card-image">
+            <div class="card-content">
+                <p class="card-title">Lumikero</p>        
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error explicabo cum corrupti tenetur iure alias labore id nostrum non dolor nulla maiores aperiam voluptatem voluptates, vero excepturi debitis sit quaerat?</p>
+                <button class="card-button">Read more</button>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="img/places/Haaravaara.jpg" class="card-image">   
+            <div class="card-content">
+                <p class="card-title">Haaravaara</p>        
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error explicabo cum corrupti tenetur iure alias labore id nostrum non dolor nulla maiores aperiam voluptatem voluptates, vero excepturi debitis sit quaerat?</p>
+                <button class="card-button">Read more</button>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <img src="img/places/Sioskuru_leiri.jpg" class="card-image">
+            <div class="card-content">
+                <p class="card-title">Sioskuru</p>        
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error explicabo cum corrupti tenetur iure alias labore id nostrum non dolor nulla maiores aperiam voluptatem voluptates, vero excepturi debitis sit quaerat?</p>
+                <button class="card-button">Read more</button>
+            </div>
+        </div>
+
+
+        <div class="item-card">
+            <img src="img/places/Sioskuru_leiri.jpg" class="card-image">
+            <div class="card-content">
+                <p class="card-title">Sioskuru</p>        
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error explicabo cum corrupti tenetur iure alias labore id nostrum non dolor nulla maiores aperiam voluptatem voluptates, vero excepturi debitis sit quaerat?</p>
+                <button class="card-button">Read more</button>
+            </div>
+        </div>
+
+
+        <div class="item-card">
+            <img src="img/places/Sioskuru_leiri.jpg" class="card-image">
+             <div class="card-content">
+                 <p class="card-title">Sioskuru</p>        
+                 <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error explicabo cum corrupti tenetur iure alias labore id nostrum non dolor nulla maiores aperiam voluptatem voluptates, vero excepturi debitis sit quaerat?</p>
+                <button class="card-button">Read more</button>
+            </div>
+        </div>
+
+    </main>
+    
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

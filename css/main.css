@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5; }
+
+:root {
+  --headline-color: white;
+  --background-color: #d4d4d3 ;
+  --text-color: rgba(255, 255, 255, 0.4); }
+
+html, body {
+  background: #dee6e3;
+  font-family: 'Open sans', sans-serif; }
+
+nav {
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba 0, 0, 0, 0.1; }
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+nav li {
+  height: 50px; }
+  nav li:first-child {
+    margin-right: auto; }
+  nav li:last-child {
+    display: none; }
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black; }
+  nav a:hover {
+    background-color: #f0f0f0; }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start; }
+
+.sidebar li {
+  width: 100%; }
+
+.sidebar a {
+  width: 100%; }
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 540; }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    font-size: 45px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+    padding: 0;
+    margin-top: 2rem; }
+
+header {
+  z-index: 2;
+  width: 100%; }
+
+.text-secondary {
+  color: #548164; }
+
+.parallax-wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 100px; }
+
+.landing-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -5; }
+
+.parallax-backdrop-img {
+  transform: translateZ(-100px) scale(2); }
+
+.parallax-backdrop-img,
+.arallax-foreground-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -5; }
+
+.landing-content {
+  font-size: 2rem;
+  padding: 2rem;
+  background-color: #333;
+  color: white; }
+
+.landing-screen {
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../dist/img/Parallax_backdrop/Pallas_Patikka_parallax_tausta_1.png"); }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-columns: repeat(3, 1fr); }
+  .about-info .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: #548164 3px solid; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1,5rem; }
+  .about-info .job-1 {
+    grid-area: job1; }
+  .about-info .job-2 {
+    grid-area: job2; }
+  .about-info .job-3 {
+    grid-area: job3; }
+  .about-info .job {
+    background: #edf1ef;
+    padding: 0,5rem;
+    border-bottom: #548164 5px solid; }
+
+.discover-content {
+  width: 80%;
+  margin: auto; }
+
+.highlights {
+  padding: 50px, 20px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  max-width: 1000px;
+  margin: auto; }
+
+.places-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-auto-columns: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  margin: auto;
+  width: 80%; }
+
+.item-card {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  max-width: 340px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative; }
+  .item-card:hover .card-content {
+    right: 0; }
+  .item-card .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .item-card .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    transition: 0.5s;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    border-radius: 20px; }
+  .item-card .card-title {
+    padding-top: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: 200; }
+  .item-card .card-text {
+    color: white;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 350;
+    padding-top: 50px;
+    padding-bottom: 40px; }
+  .item-card .card-button {
+    color: white;
+    background-color: rgba(0, 30, 50, 0.7);
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    box-sizing: 5px;
+    font-weight: 500;
+    width: 100px;
+    cursor: pointer; }
+
+.location-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  background-color: #dee6e3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 55%; }
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px; }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .places-grid {
+    grid-template-columns: repeat(3, 1fr); }
+  .item-card {
+    width: 30vw; } }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center; }
+  .places-grid {
+    grid-template-columns: repeat(2, 1fr); }
+  .item-card {
+    width: 45vw; }
+  nav li:last-child {
+    display: flex; }
+  .topbar_element {
+    display: none; }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; }
+  .places-grid {
+    grid-template-columns: repeat(1, 1fr); }
+  .sidebar {
+    width: 100%; }
+  .item-card {
+    width: 80vw; } }
