@@ -66,11 +66,6 @@ h2,
 h3 {
   margin: 0;
   font-weight: 540; }
-  h1.br,
-  h2.br,
-  h3.br {
-    display: block;
-    margin: 5px; }
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
@@ -88,12 +83,7 @@ h3 {
     padding: 0;
     margin-top: 2rem; }
 
-a {
-  color: #fff;
-  text-decoration: none; }
-
 header {
-  position: fixed;
   z-index: 2;
   width: 100%; }
 
@@ -104,11 +94,38 @@ header {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  perspective: 300px; }
+  perspective: 100px; }
+
+.landing-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -5; }
+
+.parallax-backdrop-img {
+  transform: translateZ(-100px) scale(2); }
+
+.parallax-backdrop-img,
+.arallax-foreground-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -5; }
+
+.landing-content {
+  font-size: 2rem;
+  padding: 2rem;
+  background-color: #333;
+  color: white; }
 
 .landing-screen {
   justify-content: center;
-  height: 100vh; }
+  height: 100vh;
+  background-image: url("../dist/img/Parallax_backdrop/Pallas_Patikka_parallax_tausta_1.png"); }
 
 .about-info {
   display: grid;
@@ -133,6 +150,10 @@ header {
     background: #edf1ef;
     padding: 0,5rem;
     border-bottom: #548164 5px solid; }
+
+.discover-content {
+  width: 80%;
+  margin: auto; }
 
 .highlights {
   padding: 50px, 20px;
@@ -209,6 +230,7 @@ header {
     cursor: pointer; }
 
 .location-container {
+  width: 80%;
   max-width: 1000px;
   margin: 0 auto;
   padding: 50px 20px;
@@ -229,10 +251,6 @@ iframe {
   height: 100%;
   border: none;
   border-radius: 10px; }
-
-@media screen and (min-width: 1171px) {
-  .sm-heading {
-    margin-left: 70px; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .places-grid {
