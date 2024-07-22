@@ -105,11 +105,31 @@ header {
   transform-style: preserve-3d;
   z-index: -5; }
 
+.parallax-titletext {
+  transform: translateZ(-120px) scale(2.1);
+  position: absolute;
+  z-index: -5; }
+
 .parallax-backdrop-img {
   transform: translateZ(-100px) scale(2); }
 
+.parallax-1-img {
+  transform: translateZ(-80px) scale(2); }
+
+.parallax-2-img {
+  transform: translateZ(-60px) scale(2); }
+
+.parallax-3-img {
+  transform: translateZ(-40px) scale(2); }
+
+.parallax-foreground-img {
+  scale: 1; }
+
 .parallax-backdrop-img,
-.arallax-foreground-img {
+.parallax-1-img,
+.parallax-2-img,
+.parallax-3-img,
+.parallax-foreground-img {
   position: absolute;
   height: 100%;
   width: 100%;
