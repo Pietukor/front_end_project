@@ -145,11 +145,13 @@ header {
 
 .parallax-title-logo-img {
     
-    align-self: center;
-    max-width: 60%;
+    align: center;
+    width: 60%;
+    max-width: 1800px;
+    min-width: 800px;
     height: auto;
     margin-top: 30px;
-    //transform: translateZ(-100px) scale(2.1);
+    transform: translateZ(-35px) scale(0.65);
     position: absolute;
     z-index: -4;
 
@@ -190,7 +192,7 @@ header {
 }
 
 .landing-content {
-    font-size: 2rem;
+    font-size: 26px;
     padding: 2rem;
     background-color: rgba(24,23,32,255);
     color: white;
@@ -205,44 +207,24 @@ header {
 
 
 // about page
-.about-info {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-areas:
-    'bioimage bio bio'
-    'job1 job2 job3';
-    grid-template-columns: repeat(3, 1fr);
 
-    .bio-image {
-        grid-area: bioimage;
-        margin: auto;
-        border-radius: 50%;
-        border: $secondary-color 3px solid;
-    }
-    
-    .bio {
-        grid-area: bio;
-        font-size: 1,5rem;
-    }
-    
-    .job-1 {
-        grid-area: job1;
-    }
-    
-    .job-2 {
-        grid-area: job2;
-    }
-    
-    .job-3 {
-        grid-area: job3;
-    }
-    
-    .job {
-        background: lighten($primary-color, 5);
-        padding: 0,5rem;
-        border-bottom: $secondary-color 5px solid;
-    }
+.about-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 100;
+    font-size: 20px;
+    color:rgba(0, 30, 50, 1);
 }
+
+.about-text-proper {
+    border-top: 2px solid rgba(0, 30, 50, 1);
+    column-width: 500px;
+    column-gap: 4rem;
+    padding-top: 40px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+   
 
 // Discover page / Places
 
@@ -258,7 +240,7 @@ header {
     justify-items: center;
     max-width: 1000px;
     margin: auto;
-    
+    border-bottom: 30px;
 }
 .places-grid {
 
@@ -270,7 +252,7 @@ header {
     justify-content: center;
     place-items: center;
     margin: auto;
-    width: 80%
+    width: 80%;
 }
 
 .item-card {
