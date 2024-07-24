@@ -10,7 +10,7 @@
   --text-color: rgba(255, 255, 255, 0.4); }
 
 html, body {
-  background: #dee6e3;
+  background: #b8c8ed;
   font-family: 'Open sans', sans-serif; }
 
 nav {
@@ -107,10 +107,13 @@ header {
   z-index: -5; }
 
 .parallax-title-logo-img {
-  align-self: center;
-  max-width: 60%;
+  align: center;
+  width: 60%;
+  max-width: 1800px;
+  min-width: 800px;
   height: auto;
   margin-top: 30px;
+  transform: translateZ(-35px) scale(0.65);
   position: absolute;
   z-index: -4; }
 
@@ -141,7 +144,7 @@ header {
   z-index: -5; }
 
 .landing-content {
-  font-size: 2rem;
+  font-size: 26px;
   padding: 2rem;
   background-color: #181720;
   color: white;
@@ -151,29 +154,20 @@ header {
   justify-content: center;
   height: 100vh; }
 
-.about-info {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr); }
-  .about-info .bio-image {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: #548164 3px solid; }
-  .about-info .bio {
-    grid-area: bio;
-    font-size: 1,5rem; }
-  .about-info .job-1 {
-    grid-area: job1; }
-  .about-info .job-2 {
-    grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
-  .about-info .job {
-    background: #edf1ef;
-    padding: 0,5rem;
-    border-bottom: #548164 5px solid; }
+.about-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 100;
+  font-size: 20px;
+  color: #001e32; }
+
+.about-text-proper {
+  border-top: 2px solid #001e32;
+  column-width: 500px;
+  column-gap: 4rem;
+  padding-top: 40px;
+  line-height: 1.6;
+  font-weight: 300; }
 
 .discover-content {
   width: 80%;
@@ -185,7 +179,8 @@ header {
   align-items: center;
   justify-items: center;
   max-width: 1000px;
-  margin: auto; }
+  margin: auto;
+  border-bottom: 30px; }
 
 .places-grid {
   display: grid;
@@ -258,7 +253,7 @@ header {
   max-width: 1000px;
   margin: 0 auto;
   padding: 50px 20px;
-  background-color: #dee6e3;
+  background-color: #b8c8ed;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
 
 .map-container {
