@@ -1,3 +1,17 @@
+@keyframes card-slide {
+  from {
+    transform: translateX(-100%);
+    opacity: 0; }
+  to {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes card-appear {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -149,17 +163,52 @@ header {
   background-color: #181720;
   color: white;
   z-index: 0; }
+  .landing-content .sm-heading {
+    color: #c9a60c;
+    margin-bottom: 60px; }
 
 .landing-screen {
   justify-content: center;
   height: 100vh; }
+
+.landing-card {
+  width: 50%;
+  min-width: 370px;
+  max-width: 970px;
+  height: 80px;
+  padding-left: 30px;
+  border-radius: 20px;
+  color: white;
+  background: #21293a;
+  justify: center;
+  margin-bottom: 60px;
+  animation: card-slide linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%; }
+
+.landing-card-sight {
+  width: 42%;
+  min-width: 320px;
+  max-width: 800px;
+  height: 50px;
+  border-radius: 20px;
+  padding-left: 30px;
+  color: white;
+  background: #6d768a;
+  justify: center;
+  margin-bottom: 60px;
+  margin-left: 8%;
+  animation: card-appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%; }
 
 .about-text {
   padding-top: 30px;
   padding-bottom: 30px;
   font-weight: 100;
   font-size: 20px;
-  color: #001e32; }
+  color: #001e32;
+  z-index: 1; }
 
 .about-text-proper {
   border-top: 2px solid #001e32;
@@ -236,31 +285,46 @@ header {
     font-weight: 350;
     padding-top: 50px;
     padding-bottom: 40px; }
-  .item-card .card-button {
-    color: white;
-    background-color: rgba(0, 30, 50, 0.7);
-    padding: 8px;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    box-sizing: 5px;
-    font-weight: 500;
-    width: 100px;
-    cursor: pointer; }
+
+.card-button {
+  color: whitesmoke;
+  background-color: rgba(0, 30, 50, 0.7);
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-sizing: 5px;
+  font-weight: 500;
+  width: 100px;
+  cursor: pointer; }
 
 .location-container {
   width: 80%;
   max-width: 2000px;
   margin: 0 auto;
-  padding: 50px 20px;
+  padding: 0px 20px;
   background-color: #b8c8ed;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+
+.open-map {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  display: inline-block;
+  font-weight: 600; }
+
+.open-map:hover {
+  box-shadow: 2px 3px 2px 0px rgba(0, 0, 0, 0.2); }
 
 .map-container {
   position: relative;
   width: 100%;
   height: 0;
   padding-bottom: 55%; }
+
+.top-button-container {
+  padding-bottom: 10px;
+  display: inline-block; }
 
 iframe {
   position: absolute;
